@@ -26,7 +26,7 @@ router.get('/', auth, async (req, res) => {
 
 });
 
-
+// issue in auth.js is cleared
 router.post('/', [
     check('email', 'Please add a valid email').isEmail(),
     check('password', 'please enter a password').exists()
